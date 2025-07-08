@@ -6,6 +6,7 @@ import { toast, ToastContainer } from "react-toastify";
 import { addToCart, removeFromCart } from "../store/card";
 import { useDispatch, useSelector } from "react-redux";
 import "react-toastify/dist/ReactToastify.css";
+import bir from "../img/nimadir.jpg";
 import ramadan from "../img/ramadan.jpg";
 import har from "../img/har.jpg";
 import uzum from "../img/uzum.jpg";
@@ -21,7 +22,7 @@ function Home() {
   let dispatch = useDispatch();
   let cards = useSelector((state) => state.cart.cartItems);
   const likedItems = useSelector((state) => state.like.likedItems);
-  const slides = [`${ramadan}`, `${har}`, `${uzum}`, `${karta}`];
+  const slides = [`${bir}`, `${ramadan}`, `${har}`, `${uzum}`, `${karta}`];
   const [current, setCurrent] = useState(0);
   let ref = useRef();
 
